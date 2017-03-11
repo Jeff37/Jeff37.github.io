@@ -30,6 +30,7 @@ Un fichier *Markdown* permettant de créer cette page html est [à télécharger
 #### Carte audio Cirrus Logic Wolfson
 ##### Chez "Element14": <https://www.element14.com/community/community/raspberry-pi/raspberry-pi-accessories/cirrus_logic_audio_card> --> 34.18 €  
 **Features:**   
+
 - Compatible with Raspberry Pi B and A onwards (with 40-pin extended GPIO, and no P5 connector)  
 - Capable of rendering HD Audio, at 24-bit, 192kHz  
 - 3.5mm 4-pole jack for a headset/boom mic combination for gaming or VoIP applications  
@@ -94,7 +95,7 @@ OLED Display Details:
 
 #### Carte SD 16GO (avec image RaspBian)
 MicroSD!!  
-Fazbricant conseillé?  
+Fabricant conseillé?  
 
 #### Micro
 Fabriqués par Knowles, ces capteurs sont identiques à ceux des détecteurs du commerce (modèles electret de la série FG ou modèles MEMS).  
@@ -114,7 +115,7 @@ N'importe?
 Le dispositif a une autonomie de plusieurs nuits, 2 nuits pour une batterie de 6600mAh.  
 
 #### Case
-A bricoler sois-même à partir de boîtiers électroniques classiques. Il faut pouvoir découperdes fenêtres pour l'écran OLED, le clavier 16 touches, l'accès vers le connecteur USB, la fiche Jack et tous les trous pour faire passer les vis de fixation.  
+A bricoler sois-même à partir de boîtiers électroniques classiques. Il faut pouvoir découper des fenêtres pour l'écran OLED, le clavier 16 touches, l'accès vers le connecteur USB, la fiche Jack et tous les trous pour faire passer les vis de fixation.  
 Trouvé un boîtier tout fait: <http://www.uugear.com/product/acrylic-case-for-witty-pi-and-raspberry-pi-clear/>, c'est probablement pas l'idéal pour faire tous les trous...  
 
 ### Autres éléments matériels (cf. document Platine J2)
