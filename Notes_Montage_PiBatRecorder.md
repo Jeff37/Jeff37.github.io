@@ -4,22 +4,28 @@
 </header> 
 
 Date: 10/03/2017  
+Author: JF Godeau et JL Leclef  
 
 ---  
 
-Mon "log" du montage d'un PiBatRecorder.  
+# "log" du montage d'un PiBatRecorder.  
 
 Le projet PiBatRecorder a pris une forme très aboutie début 2017, ce qui a été signalé sur les différents forums, notamment en pointant vers [ce post](http://pibatrecorder.ardechelibre.org/2017/01/30/2017-nouvelles-pibatrecorder/) qui présente succinctement le résultat, de nombreuses photos à l'appui.  
 En parallèle au site officiel <http://pibatrecorder.ardechelibre.org/> il y a une plate-forme *Framagit* sur laquelle se trouvent tous les codes sources avec les documents, schémas et discussions sur le développement du projet: [Framagit](https://framagit.org/PiBatRecorderPojects/PiBatRecorder).  
 Un fichier *Markdown* permettant de créer cette page html est [à télécharger ici](http://jeff37.github.io/Notes_Montage_PiBatRecorder.md). S'il y a des ajouts ou commentaires à apporter, il suffit de l'éditer et de me le renvoyer [par mail](mailto:jfgodeau@gmail.com).  
 
+## Etapes  
+- 11/03/2017: création de cette page  
+- 18/04/2017: Jean-Louis a reçu le Raspberry Pi A+ et la carte audio Wolfson de chez Element14 ainsi qu'une carte SD 32Go (Premium SDHC UHS-I) de la marque Intenso  
+
+
 ## PiBatRecorder est composé des éléments suivants :
-- Une carte processeur Raspberry Pi A+,  
-- Une carte audio Cirrus Logic Wolfson à 192kHz de fréquence d'échantillonnage maximum,  
+- ~~Une carte processeur Raspberry Pi A+,~~  
+- ~~Une carte audio Cirrus Logic Wolfson à 192kHz de fréquence d'échantillonnage maximum,~~  
 - Une carte horloge temps réel avec batterie pour conserver l'heure à l'arrêt,  
 - Une carte afficheur OLED 128x64 pixels avec contrôleur type SH1106 ou SSD1306,  
 - Un clavier sensitif 16 touches type TTP229,  
-- Une carte SD 16GO avec une image RaspBian spécifique proposée par le constructeur de la carte audio  
+- ~~Une carte SD 16GO avec une image RaspBian spécifique proposée par le constructeur de la carte audio~~  
 - Un micro avec un éventuel pré-ampli connecté sur l'entrée casque ou ligne de la carte audio,  
 - En option, un amplificateur audio sur la sortie ligne ou un casque sur la sortie casque,  
 - En option, une clé USB pour l'enregistrement des fichiers wav.  
@@ -84,6 +90,13 @@ OLED Display Details:
 - Duty：1/64  
 - Brightness ( cd/m2)：100 (Typ) @ 12V  
 - Display current draw is completely dependent on your usage: each OLED LED draws current when on so the more pixels you have lit, the more current is used. They tend to draw ~25mA or so in practice but for precise numbers you must measure the current in your usage circuit  
+
+**Driver**  
+cf. plus bas, les bibliothèques utilisées: https://github.com/hallard/ArduiPi_OLED   
+?: Python library for 0.96'' OLED display: https://github.com/BLavery/lib_oled96  
+?: Python module to drive a SSD1306 / SSD1322 / SSD1325 / SSD1331 / SH1106 OLED: https://github.com/rm-hull/luma.oled   
+
+
 
 #### Clavier 16 touches
 ##### Chez Aliexpress

@@ -10,7 +10,9 @@
 <body>
 <div id="TOC">
 <ul>
-<li><a href="#pibatrecorder"><strong>PiBatRecorder</strong></a><ul>
+<li><a href="#pibatrecorder"><strong>PiBatRecorder</strong></a></li>
+<li><a href="#log-du-montage-dun-pibatrecorder.">&quot;log&quot; du montage d'un PiBatRecorder.</a><ul>
+<li><a href="#etapes">Etapes</a></li>
 <li><a href="#pibatrecorder-est-composé-des-éléments-suivants">PiBatRecorder est composé des éléments suivants :</a><ul>
 <li><a href="#hardware-ce-que-je-trouve-sur-le-web">Hardware (ce que je trouve sur le web)</a><ul>
 <li><a href="#raspberry-pi-a">Raspberry Pi A+</a></li>
@@ -39,23 +41,28 @@
 <h1 id="pibatrecorder"><a href="#pibatrecorder"><strong>PiBatRecorder</strong></a></h1>
 </header> 
 
-<p>Date: 10/03/2017</p>
+<p>Date: 10/03/2017<br />Author: JF Godeau et JL Leclef</p>
 <hr />
-<p>Mon &quot;log&quot; du montage d'un PiBatRecorder.</p>
+<h1 id="log-du-montage-dun-pibatrecorder."><a href="#log-du-montage-dun-pibatrecorder.">&quot;log&quot; du montage d'un PiBatRecorder.</a></h1>
 <p>Le projet PiBatRecorder a pris une forme très aboutie début 2017, ce qui a été signalé sur les différents forums, notamment en pointant vers <a href="http://pibatrecorder.ardechelibre.org/2017/01/30/2017-nouvelles-pibatrecorder/">ce post</a> qui présente succinctement le résultat, de nombreuses photos à l'appui.<br />En parallèle au site officiel <a href="http://pibatrecorder.ardechelibre.org/">http://pibatrecorder.ardechelibre.org/</a> il y a une plate-forme <em>Framagit</em> sur laquelle se trouvent tous les codes sources avec les documents, schémas et discussions sur le développement du projet: <a href="https://framagit.org/PiBatRecorderPojects/PiBatRecorder">Framagit</a>.<br />Un fichier <em>Markdown</em> permettant de créer cette page html est <a href="http://jeff37.github.io/Notes_Montage_PiBatRecorder.md">à télécharger ici</a>. S'il y a des ajouts ou commentaires à apporter, il suffit de l'éditer et de me le renvoyer <script type="text/javascript">
 <!--
 h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#106;&#102;&#x67;&#x6f;&#100;&#x65;&#x61;&#x75;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'par mail'+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#x61;&#114;&#32;&#x6d;&#x61;&#x69;&#108;&#32;&#40;&#106;&#102;&#x67;&#x6f;&#100;&#x65;&#x61;&#x75;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;&#x29;</noscript>.</p>
+<h2 id="etapes"><a href="#etapes">Etapes</a></h2>
+<ul>
+<li>11/03/2017: création de cette page<br /></li>
+<li>18/04/2017: Jean-Louis a reçu le Raspberry Pi A+ et la carte audio Wolfson de chez Element14 ainsi qu'une carte SD 32Go (Premium SDHC UHS-I) de la marque Intenso</li>
+</ul>
 <h2 id="pibatrecorder-est-composé-des-éléments-suivants"><a href="#pibatrecorder-est-composé-des-éléments-suivants">PiBatRecorder est composé des éléments suivants :</a></h2>
 <ul>
-<li>Une carte processeur Raspberry Pi A+,<br /></li>
-<li>Une carte audio Cirrus Logic Wolfson à 192kHz de fréquence d'échantillonnage maximum,<br /></li>
+<li><del>Une carte processeur Raspberry Pi A+,</del><br /></li>
+<li><del>Une carte audio Cirrus Logic Wolfson à 192kHz de fréquence d'échantillonnage maximum,</del><br /></li>
 <li>Une carte horloge temps réel avec batterie pour conserver l'heure à l'arrêt,<br /></li>
 <li>Une carte afficheur OLED 128x64 pixels avec contrôleur type SH1106 ou SSD1306,<br /></li>
 <li>Un clavier sensitif 16 touches type TTP229,<br /></li>
-<li>Une carte SD 16GO avec une image RaspBian spécifique proposée par le constructeur de la carte audio<br /></li>
+<li><del>Une carte SD 16GO avec une image RaspBian spécifique proposée par le constructeur de la carte audio</del><br /></li>
 <li>Un micro avec un éventuel pré-ampli connecté sur l'entrée casque ou ligne de la carte audio,<br /></li>
 <li>En option, un amplificateur audio sur la sortie ligne ou un casque sur la sortie casque,<br /></li>
 <li>En option, une clé USB pour l'enregistrement des fichiers wav.</li>
@@ -115,6 +122,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'par mail'+'<\/'+'a'+'>');
 <li>Brightness ( cd/m2)：100 (Typ) @ 12V<br /></li>
 <li>Display current draw is completely dependent on your usage: each OLED LED draws current when on so the more pixels you have lit, the more current is used. They tend to draw ~25mA or so in practice but for precise numbers you must measure the current in your usage circuit</li>
 </ul>
+<p><strong>Driver</strong><br />cf. plus bas, les bibliothèques utilisées: https://github.com/hallard/ArduiPi_OLED<br />?: Python library for 0.96'' OLED display: https://github.com/BLavery/lib_oled96<br />?: Python module to drive a SSD1306 / SSD1322 / SSD1325 / SSD1331 / SH1106 OLED: https://github.com/rm-hull/luma.oled</p>
 <h4 id="clavier-16-touches"><a href="#clavier-16-touches">Clavier 16 touches</a></h4>
 <h5 id="chez-aliexpress"><a href="#chez-aliexpress">Chez Aliexpress</a></h5>
 <p><a href="http://www.aliexpress.com/item-img/Raspberry-Pi-Model-B-B-TTP229-LSF-Detector-Controller-Capacitive-Touch-Keypad-Supports-Up-To-16/32244629626.html#">http://www.aliexpress.com/item-img/Raspberry-Pi-Model-B-B-TTP229-LSF-Detector-Controller-Capacitive-Touch-Keypad-Supports-Up-To-16/32244629626.html#</a> --&gt; 9.99$</p>
